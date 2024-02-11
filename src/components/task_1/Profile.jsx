@@ -1,6 +1,6 @@
 
 import css from './Profile.module.css'
-import { StatsItem } from './statItem'
+import { StatItem } from './StatItem'
 
 export const Profile = ({userData :{ username, tag, location, avatar, stats : {followers, views, likes} }}) => {
     
@@ -18,9 +18,9 @@ export const Profile = ({userData :{ username, tag, location, avatar, stats : {f
             </div>
 
             <ul className={css.list}>
-                <StatsItem name="Followers" value={followers}/>
-                <StatsItem name="Views" value={views}/>
-                <StatsItem name="Likes" value={likes}/>
+                <StatItem name="Followers" value={followers}/>
+                <StatItem name="Views" value={views}/>
+                <StatItem name="Likes" value={likes}/>
             </ul>
             </div>
     ) 

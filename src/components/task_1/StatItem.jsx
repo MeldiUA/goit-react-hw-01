@@ -1,6 +1,6 @@
-import css from './StatsItem.module.css'
+import css from './StatItem.module.css'
 
-export const StatsItem = ({name, value}) =>{
+export const StatItem = ({name, value}) =>{
     return(
             <li className={css.item}>
                 <span className={css.nameStat}>{name}</span>
